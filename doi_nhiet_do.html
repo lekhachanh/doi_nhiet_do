@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>Fahrenheit</b><input type="text" id="nhap_doF" oninput="Do_f(this.value)"><br>
+<b>Celsius:</b> <span id="hien_thi"></span>
+<script>
+    function Do_f(x) {
+         x = parseFloat(x);
+        document.getElementById("hien_thi").innerHTML=(x-32) / 1.8;
+    }
+</script>
+</body>
+</html>
